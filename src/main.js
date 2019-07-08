@@ -15,6 +15,7 @@ import WeaponsList from './view/weapons/WeaponsList.vue'
 
 // 创建路由对象
 const router=new VueRouter({
+  linkActiveClass: 'active',
   routes:[
     {name:'home',path:'/',redirect:'/hero'},
     {name:'hero',path:'/hero',component:HeroList},
