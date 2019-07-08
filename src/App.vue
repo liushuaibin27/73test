@@ -14,7 +14,7 @@
 
 
             <!-- 右侧 -->
-            <hero-list></hero-list>
+            <router-view></router-view>
           </div>
         </div>
       </div>
@@ -25,14 +25,14 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppSidebar from "./components/AppSidebar.vue";
-import HeroList from "./heroes/HeroList.vue";
+
 
 export default {
   name: "app",
   components: {
     AppHeader,
     AppSidebar,
-    HeroList
+    
   }
 };
 </script>

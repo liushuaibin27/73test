@@ -2,13 +2,16 @@
   <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
       <li class="active">
-        <a href="#">英雄列表</a>
+        <router-link to="/hero">英雄列表</router-link>
+        
       </li>
       <li>
-        <a href="#">武器列表</a>
+        <router-link to="/equips">武器列表</router-link>
+        
       </li>
       <li>
-        <a href="#">装备列表</a>
+        <router-link to="/weapons">装备列表</router-link>
+        
       </li>
      
     </ul>
