@@ -19,7 +19,7 @@ const router=new VueRouter({
     {name:'equips',path:'/equips',component:EquipsList},
     {name:'weapons',path:'/weapons',component:WeaponsList},
     {name:'add',path:'/hero/add',component:AddList},
-    {name:'edit',path:'/hero/edit',component:EditList},
+    {name:'edit',path:'/hero/edit/:id',component:EditList,props:true},
     
   ]
   

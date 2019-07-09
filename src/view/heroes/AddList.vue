@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import Axios from "axios";
+
 export default {
   data() {
     return {
@@ -32,8 +32,8 @@ export default {
   },
   methods: {
     add() {
-      Axios
-      .post(`http://localhost:3000/heroes`,this.formdata)
+      this.axios
+      .post(`heroes`,this.formdata)
       .then((res) => {
         if(res.status==201){
             

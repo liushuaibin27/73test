@@ -32,7 +32,7 @@
 </template>
  
 <script>
-import axios from 'axios'
+
 export default {
   data(){
     return{
@@ -45,8 +45,8 @@ export default {
   },
   methods:{
     readdata(){
-      axios
-      .get('http://localhost:3000/heroes')
+      this.axios
+      .get('heroes')
       .then((res)=>{
         if(res.status==200){
           this.list=res.data
@@ -54,8 +54,8 @@ export default {
       })
     },
     del(id){
-      axios
-      .delete(`http://localhost:3000/heroes/${id}`)
+      this.axios
+      .delete(`heroes/${id}`)
       .then((res)=>{
         
 
@@ -68,8 +68,8 @@ export default {
       })
     },
     edit(id){
-      axios
-      .put(`http://localhost:3000/heroes/${id}`)
+      this.axios
+      .put(`heroes/${id}`)
       .then((res)=>{
         console.log(res)
       })
